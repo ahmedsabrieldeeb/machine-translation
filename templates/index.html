@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Translation</title>
+</head>
+<body>
+    <h1>Machine Translation</h1>
+
+    <form method="POST" action="/translate">
+        <label for="english_sentence">Enter an English sentence:</label><br>
+        <textarea name="english_sentence" id="english_sentence" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Translate">
+    </form>
+
+    {% if french_sentence %}
+    <h3>Translated Sentence:</h3>
+    <p>{{ french_sentence }}</p>
+    {% endif %}
+</body>
+</html>
