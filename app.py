@@ -24,7 +24,6 @@ def translate():
 
     # call the translator methods 
     french_sentence = translator.translate(english_sentence)
-    # french_sentence = ' '.join(french_sentence)
     # logging the result
     logging.info("translation is: {}".format(french_sentence))
     return render_template('index.html', french_sentence = french_sentence)
